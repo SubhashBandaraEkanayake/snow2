@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/subhashbandaraekanayake/Desktop/3.2/Data Mining warehousing - CSCI 32092/Assignment2/demo/snowflake_env/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli.cli_detect())
